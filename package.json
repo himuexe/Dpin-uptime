@@ -1,0 +1,45 @@
+{
+  "name": "dpin-uptime",
+  "version": "1.0.0",
+  "description": "A decentralized website uptime monitoring platform leveraging blockchain technology",
+  "main": "index.js",
+  "scripts": {
+    "test": "hardhat test",
+    "node": "hardhat node",
+    "deploy": "hardhat run scripts/deploy-and-sync.js --network localhost",
+    "verify:node": "node scripts/verify-hardhat-node.js",
+    "verify:interfaces": "node scripts/validate-interfaces.js",
+    "sync:abis": "node scripts/sync-abis.js",
+    "sync:addresses": "node scripts/sync-addresses.js",
+    "check:config": "node scripts/check-configuration.js",
+    "test:workflow": "hardhat run scripts/test-workflow.js --network localhost"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/himuexe/Dpin-uptime.git"
+  },
+  "keywords": [
+    "blockchain",
+    "ethereum",
+    "uptime",
+    "monitoring",
+    "depin"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/himuexe/Dpin-uptime/issues"
+  },
+  "homepage": "https://github.com/himuexe/Dpin-uptime#readme",
+  "devDependencies": {
+    "@babel/parser": "^7.27.2",
+    "@babel/traverse": "^7.27.1",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^5.3.0",
+    "hardhat": "^2.23.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.1"
+  }
+}
